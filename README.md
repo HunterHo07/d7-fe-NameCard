@@ -1,3 +1,5 @@
+Visit: https://hunterho07.github.io/d7-fe-NameCard
+
 # NameCard Demo
 
 This is a demo of the NameCard digital business card platform built with Next.js, featuring advanced animations using GSAP, Lottie, and Three.js.

@@ -9,8 +9,8 @@
     "lint": "next lint",
     "export": "next build",
     "check-build": "node check-build.js",
-    "deploy": "bun run build && bun run check-build && gh-pages -d out --nojekyll --dotfiles",
-    "deploy:ci": "bun run build && bun run check-build && gh-pages -d out --nojekyll --dotfiles -u \"github-actions-bot <support+actions@github.com>\""
+    "deploy": "pnpm build && pnpm check-build && gh-pages -d out --nojekyll --dotfiles",
+    "deploy:ci": "pnpm build && pnpm check-build && gh-pages -d out --nojekyll --dotfiles -u \"github-actions-bot <support+actions@github.com>\""
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.6.0",
@@ -33,5 +33,6 @@
     "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "pnpm@11.4.0"
 }
